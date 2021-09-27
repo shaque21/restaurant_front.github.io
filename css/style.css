@@ -42,6 +42,8 @@ a{
 }
 .menu-btn-section .container{
     position: fixed;
+    top: 0;
+    width: 100%;
 } */
 /*  */
 .photo{
@@ -79,6 +81,13 @@ a{
     color: #fff;
     background-color: #ffc048;
     border: 1px solid #ffc048;
+}
+
+
+@media screen and (max-width: 770px) {
+    .address-section .column{
+        border: none;
+    }
 }
 
 
