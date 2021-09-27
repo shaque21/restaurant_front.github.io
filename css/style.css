@@ -143,6 +143,16 @@ a{
     .address-section .column{
         border: none;
     }
+    .item-default{
+        display: none !important;
+    }
 }
+@media screen and (min-width: 771px){
+    .item-default {
+        display: block !important;
+    }
+    .item-dropdown{
+        display: none;
+    }
 
-
+}
