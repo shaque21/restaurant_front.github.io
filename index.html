@@ -55,7 +55,7 @@
             </div>
             <div class="row d-flex flex-wrap">
                 <h2 class="my-5 category-div burger">Burger</h2>
-                <div class="col-md-4 category-div">
+                <div class="col-md-4 category-div burger" data-bs-toggle="modal" data-bs-target="#itemModal" >
                     <div class="card mb-3">
                         <div class="photo">
                             <img src="images/burger1.jpg" class="card-img-top" alt="...">
@@ -67,6 +67,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-md-4 category-div burger">
                     <div class="card mb-3">
                         <div class="photo">
@@ -224,10 +225,78 @@
         </div>
     </div>
 
+    <!-- Item Details Modal -->
+    <div class="modal fade" id="itemModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Jamboo Burger</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="card mb-3">
+                            <div class="item-img">
+                                <img src="images/burger1.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 p-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text"><small class="text-muted">Price : $ 150</small></p>
+                                <h5 class="card-title my-3">Description : </h5>
+                                <p class="card-text my-1">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                                <div class="item-form my-3">
+                                    <form action="">
+                                        <div class="mb-5">
+                                            <label for="quantity" class="form-label">Quantity </label>
+                                            <input type="number" class="form-control item-form-control form-control-sm" id="quantity" name="quantity" >
+                                        </div>
+                                        <div class="my-4 text-center">
+                                            <button type="submit" class="item-modal-btn">
+                                                <i class="bi bi-cart-plus"></i>
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="addToCart-btn">
+        <button class="btn btn-primary" type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling">
+            <i class="bi bi-cart-check"></i> 
+            View Cart
+            <span class="badge bg-danger">4</span>
+        </button>
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Colored with scrolling</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>Try scrolling the rest of the page to see this option in action.</p>
+            </div>
+          </div>
+    </div>
+
     <footer class="my-4">
-        <div class="row">
-            <div class="col-md-12 d-flex justify-content-center align-items-center">
-                All ©Copy Right Riserved By <a class="ms-2" href=""><span class="text-info"> Restaurant Name</span></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                    All ©Copy Right Riserved By <a class="ms-2" href=""><span class="text-info"> Restaurant Name</span></a>
+                </div>
             </div>
         </div>
     </footer>

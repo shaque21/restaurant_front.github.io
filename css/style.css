@@ -82,8 +82,63 @@ a{
     background-color: #ffc048;
     border: 1px solid #ffc048;
 }
+.item-img{
+    height: 230px;
+    width: 100%;
+    /* border: 1px solid #999; */
+    overflow: hidden;
+}
+.item-img img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    transition: all 0.3s linear;
+    cursor: pointer; 
+}
 
+.item-img:hover img{
+    transform: scale(1.1);
+}
+.item-form-control{
+    border-radius: 20px;
+    width: 80%;
+}
+.item-form-control:focus{
+    box-shadow: none;
+}
+.item-modal-btn{
+    padding: 10px 20px;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #ffc048;
+    transition: all 0.3s linear;
+}
+.item-modal-btn:hover{
+    color: #fff;
+    background-color: #ffc048;
+    border: 1px solid #ffc048;
+}
+.addToCart-btn{
+    position: fixed;
+    top: 30px;
+    left: 30px;
 
+}
+.addToCart-btn button{
+    padding: 10px 20px;
+    transition: all 0.3s linear;
+    border-radius: 0;
+    color: #fff;
+    background-color: #ffc048;
+    border: 1px solid #fff;
+}
+.addToCart-btn button:hover,
+.addToCart-btn button:focus{
+    box-shadow: none;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #ffc048;
+}
 @media screen and (max-width: 770px) {
     .address-section .column{
         border: none;
