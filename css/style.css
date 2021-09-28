@@ -197,6 +197,11 @@ a{
     background-color: #fff;
     border: 1px solid #ffc048;
 }
+.cart-item{
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    0px 2px 10px 0px rgba(50, 50, 50, 0.77);
+    box-shadow:         0px 2px 10px 0px rgba(50, 50, 50, 0.77);
+}
 @media screen and (max-width: 770px) {
     .address-section .column{
         border: none;
