@@ -67,6 +67,7 @@ a{
 
 .category-btn .buttons{
     padding: 10px 20px;
+    font-size: 14px;
     color: #000;
     background-color: #fff;
     border: 1px solid #ffc048;
@@ -126,6 +127,7 @@ a{
 }
 .addToCart-btn button{
     padding: 10px 20px;
+    font-size: 14px;
     transition: all 0.3s linear;
     border-radius: 0;
     color: #fff;
@@ -136,6 +138,62 @@ a{
 .addToCart-btn button:focus{
     box-shadow: none;
     color: #000;
+    background-color: #fff;
+    border: 1px solid #ffc048;
+}
+.cart-title{
+    color: #32325d;
+    font-weight: 400;
+    font-family: inherit !important;
+}
+.cart-item-photo{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.cart-item-photo img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    border-bottom: 4px solid #ffc048;
+}
+.cart-qty-btn{
+    border-right: 4px solid #ffc048;
+}
+.cart-qty-btn a{
+    background-color: #ffc048;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+    border: 1px solid #ffc048;
+    transition: all 0.3s linear;
+
+}
+.cart-qty-btn a:hover{
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bolder;
+    border: 1px solid #ffc048;
+    color: #ffc048;
+
+}
+.checkout-btn{
+    padding: 15px 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #ffc048;
+    border: 1px solid #ffc048;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s linear;
+
+}
+.checkout-btn:hover{
+    color: #ffc048;
     background-color: #fff;
     border: 1px solid #ffc048;
 }
